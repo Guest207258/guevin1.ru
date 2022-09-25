@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+p.HEAD_LOGO {
+
+}
+.head_button {color: black;margin: 0px 50px 0px 0px;text-decoration: none; cursor: pointer;}
+.head_buttons {
+
+}
+.head {
+
+display: flex;
+
+justify-content: space-between;
+
+height: 54px;
+
+border-bottom: 2px solid #E1E1E1;
+
+align-items: center;
+}
+div.HEAD_LOGO {margin: 0px 50px;}
+.body_box{
+    
+display: flex;
+    
+width: 100%;
+    
+height: calc(100vh - 56px);
+    
+align-items: center;
+    
+justify-content: center;
+}
+img.fan{
+
+width: 180px;
+
+transform: rotate(-45deg);
+animation: fanim 2.5s infinite;
+
+animation-timing-function: linear;
+}
+div.fan{
+width: 400px;
+height: 400px;
+background: #A55050;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 60px;
+animation: fan1 2.5s infinite;
+animation-timing-function: linear;
+margin: 0px 80px;
+}
+div.fan2{
+width: 400px;
+height: 400px;
+background: #544141;
+display: flex;
+align-items: center;
+background: #a55050;
+border-radius: 60px;
+transform: rotate(45deg);
+animation: fan2 2.5s infinite;
+animation-timing-function: linear;
+justify-content: center;
+}
+div.fantext{
+
+width: 490px;
+
+height: 300px;
+}
+p.fantext{
+
+font-size: 24px;
+
+text-align: center;
+
+margin-top: 20px;
+}
+p.fanerror{
+
+color: red;
+
+text-align: center;
+
+margin-top: 20px;
+}
+hr.fan_line{
+    
+width: 130px;
+    
+border-bottom: 3px solid black;
+    
+margin-top: 18px;
+}
+@keyframes fan1 {
+    from {
+        transform: rotate(0deg);
+        background: #A55050;
+    }
+     20%{
+        background: #ff0000;
+        
+     }
+     40%{
+        background: #00ff37;
+     }
+     60%{
+        background: #17d0d6;
+     }
+     80%{
+        background: #1d11c7;
+     }
+
+  
+    to {
+        transform: rotate(360deg);
+        background: #A55050;
+    }
+
+}
+@keyframes fan2 {
+    from {
+        transform: rotate(-90deg);
+        background: #A55050;
+    }
+      20%{
+        background: #ff0000;
+        
+     }
+     40%{
+        background: #00ff37;
+     }
+     60%{
+        background: #17d0d6;
+     }
+     80%{
+        background: #1d11c7;
+     }
+
+  
+    to {
+        transform: rotate(-810deg);
+        background: #A55050;
+    }
+}
+@keyframes fanim {
+    from {
+        transform: rotate(90deg);
+
+    }
+     
+
+  
+    to {
+        transform: rotate(450deg);
+    
+    }
+}
+.hide{
+    display: none;
+}
+div.projectype{
+display: none;
+
+position: absolute;
+top: 56px;
+right: 0;
+
+
+
+}
+p.projectype{
+    
+padding: 20px;
+    
+border: 2px solid #E1E1E1;
+    
+border-top: 0;
+    
+background: #EFEFEF;
+    
+position: relative;
+}
+#project:checked ~ div.projectype{
+display: block;
+}
+div.projects,
+.pro{
+
+position: absolute;
+
+right: 195px;
+
+display: none;
+
+align-items: center;
+
+justify-content: center;
+
+flex-direction: column;
+
+top: 0;
+
+background: #efefef;
+}
+a.project{
+    padding: 20px;
+    border: 2px solid #E1E1E1;
+    border-top: 0;
+    width: 200px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+p.projectype:hover ~ div.projects{
+    display: flex;
+}
+div.projects:hover{
+    display: flex;
+}
+p.p:hover ~ div.pro{
+    display: flex;
+}
+div.pro:hover{
+    display: flex;
+}
+
+
+
+
+
+
+
+
